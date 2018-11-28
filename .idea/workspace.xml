@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e326c7a-ed39-4b1d-9db9-e73ee0083ddd" name="Default Changelist" comment="" />
+    <list default="true" id="7e326c7a-ed39-4b1d-9db9-e73ee0083ddd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/y_pred.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/y_pred.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppd_rank1/data_model_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/ppd_rank1/data_model_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,39 +22,41 @@
     <session id="-2005311274">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="2" />
-          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
-          <entry key="py" value="20" />
+          <entry key="md" value="1" />
+          <entry key="py" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="20" />
+          <entry key="Python" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="py" value="3336" />
+          <entry key="py" value="4179" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="3336" />
+          <entry key="Python" value="4179" />
         </counts>
       </usages-collector>
     </session>
@@ -54,10 +66,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="138">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
               <folding>
-                <marker date="1542781697087" expanded="true" signature="59:60" ph="..." />
+                <marker date="1542811505169" expanded="true" signature="59:60" ph="..." />
               </folding>
             </state>
           </provider>
@@ -66,12 +78,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1541">
-              <caret line="121" selection-start-line="121" selection-end-line="121" />
+            <state relative-caret-position="368">
+              <caret line="25" column="85" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="85" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <element signature="e#238#3153#0" />
-                <marker date="1542723753066" expanded="false" signature="233:234" ph="..." />
+                <marker date="1542872399362" expanded="true" signature="253:254" ph="..." />
               </folding>
             </state>
           </provider>
@@ -80,11 +91,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+            <state relative-caret-position="368">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
-                <marker date="1542784006241" expanded="true" signature="143:144" ph="..." />
+                <marker date="1542872490235" expanded="true" signature="143:144" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="105" column="12" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="12" />
+            <state relative-caret-position="836">
+              <caret line="103" column="78" selection-start-line="103" selection-start-column="78" selection-end-line="103" selection-end-column="78" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -103,22 +114,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ppd_rank1/data_model_train.py">
+        <entry file="file://$PROJECT_DIR$/features.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="506" column="28" selection-start-line="506" selection-start-column="13" selection-end-line="506" selection-end-column="28" />
+            <state relative-caret-position="5313">
+              <caret line="241" column="5" selection-start-line="241" selection-start-column="5" selection-end-line="241" selection-end-column="5" />
               <folding>
-                <element signature="e#16#35#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ppd_rank1/data_aug.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="170" column="25" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -126,12 +128,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="79" column="36" lean-forward="true" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+            <state relative-caret-position="5658">
+              <caret line="252" column="6" selection-start-line="252" selection-start-column="6" selection-end-line="252" selection-end-column="6" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1542783945174" expanded="true" signature="2346:2359" ph="..." />
-                <marker date="1542783945174" expanded="true" signature="2947:2948" ph="..." />
+                <marker date="1542870887421" expanded="true" signature="2355:2368" ph="..." />
+                <marker date="1542870887421" expanded="false" signature="2956:2957" ph="..." />
               </folding>
             </state>
           </provider>
@@ -157,12 +159,19 @@
       <find>EMBEDDING_DIM</find>
       <find>roc_auc_score</find>
       <find>siamese_rnn</find>
-      <find>opt</find>
       <find>features_input</find>
       <find>char_embedding_matrixchar_embedding_matrix</find>
       <find>test_f</find>
       <find>features_test_r</find>
+      <find>processed_data_root</find>
+      <find>seed</find>
+      <find>Parallel</find>
+      <find>features_train</find>
+      <find>opt</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -174,10 +183,12 @@
         <option value="$PROJECT_DIR$/../chip2018_/config.py" />
         <option value="$PROJECT_DIR$/../chip2018_/data_preprocess.py" />
         <option value="$PROJECT_DIR$/semi_supervised.py" />
-        <option value="$PROJECT_DIR$/data_preprocess.py" />
         <option value="$PROJECT_DIR$/ppd.py" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/features.py" />
+        <option value="$PROJECT_DIR$/ppd_rank1/data_model_train.py" />
         <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/data_preprocess.py" />
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/train.py" />
       </list>
@@ -195,12 +206,12 @@
     <option name="width" value="1366" />
     <option name="height" value="745" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,10 +219,16 @@
               <item name="chip2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="chip2018" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="chip2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chip2018" type="462c0819:PsiDirectoryNode" />
+              <item name="ppd_rank1" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,7 +238,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Code/_NLP-LM/word_language_model" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -258,9 +275,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1913646" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -309,72 +325,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ppd_rank1/data_model_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="88" column="40" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ppd_rank1/data_aug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2921">
+          <caret line="130" column="26" lean-forward="true" selection-start-line="130" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="138">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
           <folding>
-            <marker date="1542781697087" expanded="true" signature="59:60" ph="..." />
+            <marker date="1542811505169" expanded="true" signature="59:60" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1541">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="368">
+          <caret line="25" column="85" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="85" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#238#3153#0" />
-            <marker date="1542723753066" expanded="false" signature="233:234" ph="..." />
+            <marker date="1542872399362" expanded="true" signature="253:254" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+        <state relative-caret-position="368">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <marker date="1542784006241" expanded="true" signature="143:144" ph="..." />
+            <marker date="1542872490235" expanded="true" signature="143:144" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ppd_rank1/data_aug.py">
+    <entry file="file://$PROJECT_DIR$/features.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="170" column="25" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ppd_rank1/data_model_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="506" column="28" selection-start-line="506" selection-start-column="13" selection-end-line="506" selection-end-column="28" />
+        <state relative-caret-position="5313">
+          <caret line="241" column="5" selection-start-line="241" selection-start-column="5" selection-end-line="241" selection-end-column="5" />
           <folding>
-            <element signature="e#16#35#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="79" column="36" lean-forward="true" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+        <state relative-caret-position="5658">
+          <caret line="252" column="6" selection-start-line="252" selection-start-column="6" selection-end-line="252" selection-end-column="6" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1542783945174" expanded="true" signature="2346:2359" ph="..." />
-            <marker date="1542783945174" expanded="true" signature="2947:2948" ph="..." />
+            <marker date="1542870887421" expanded="true" signature="2355:2368" ph="..." />
+            <marker date="1542870887421" expanded="false" signature="2956:2957" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="105" column="12" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="12" />
+        <state relative-caret-position="836">
+          <caret line="103" column="78" selection-start-line="103" selection-start-column="78" selection-end-line="103" selection-end-column="78" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

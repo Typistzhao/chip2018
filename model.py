@@ -20,13 +20,16 @@ def siamese_rnn(embedding_matrix,is_use_word):
     q1_input = Input(shape=(text_len,), dtype="int32")
     q1 = embedding_layer(q1_input)
     q1 = norm(q1)
-    q1_embed = SpatialDropout1D(0.2)(q1)
+    q1_embed = SpatialDropout1D(0.3)(q1)
+
 
     q2_input = Input(shape=(text_len,), dtype="int32")
     q2 = embedding_layer(q2_input)
     q2 = norm(q2)
-    q2_embed = SpatialDropout1D(0.2)(q2)
+    q2_embed = SpatialDropout1D(0.3)(q2)
 
+    # char_bilstm_layer1 = Bidirectional(LSTM(300, return_sequences=True),merge_mode='sum')
+    # char_bilstm_layer2 = Bidirectional(LSTM(300, return_sequences=True),merge_mode='sum')
     char_bilstm_layer1 = Bidirectional(CuDNNLSTM(300, return_sequences=True),merge_mode='sum')
     char_bilstm_layer2 = Bidirectional(CuDNNLSTM(300, return_sequences=True),merge_mode='sum')
 
@@ -36,16 +39,24 @@ def siamese_rnn(embedding_matrix,is_use_word):
     merged_max = pool_corr(q1, q2, 'max', 'jaccard')
     merged_ave = pool_corr(q1, q2, 'ave', 'jaccard')
 
-    merged = concatenate([merged_ave,merged_max])
+    # features_input = Input(shape=[features_train.shape[1]], dtype='float')
+    # features_dense = BatchNormalization()(features_input)
+    # features_dense = Dropout(0.3)(Dense(1024, activation='relu')(features_dense))
+    # features_dense = BatchNormalization()(features_dense)
+    # features_dense = Dense(512, activation='relu')(features_dense)
+
+    features = Input(shape=(5,), dtype="float32")
+
+    merged = concatenate([merged_ave,merged_max,features])
     # merged = Dropout(0.2)(merged)
     # merged = BatchNormalization()(merged)
-    merged = Dense(200,activation='relu')(merged)
-    merged = Dense(200,activation='relu')(merged)
+    merged = Dense(512,activation='relu')(merged)
+    merged = Dense(512,activation='relu')(merged)
     output = Dense(1, activation='sigmoid')(merged)
 
-    lr=0.0008
+    lr=0.0002
 
-    model = Model(inputs=[q1_input,q2_input], outputs=output)
+    model = Model(inputs=[q1_input,q2_input,features], outputs=output)
 
     model.compile(loss='binary_crossentropy',optimizer=Nadam(lr),metrics=['binary_crossentropy','accuracy',f1])
     # model.load_weights("./data/weights_best_0.0008.hdf5")

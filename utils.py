@@ -3,7 +3,7 @@ import keras.backend.tensorflow_backend as K
 from keras.layers import *
 from keras.callbacks import *
 from tqdm import tqdm
-
+import re
 from sklearn.metrics import roc_auc_score, f1_score, precision_score, recall_score
 
 
@@ -107,7 +107,7 @@ def cluster_pos(file='train'):
     tr = tr.loc[y_idx,['qid1','qid2']]
     print(tr.shape)
     tr = tr.sort_values(by=['qid1', 'qid2']).values
-    for i in range(len(tr)):
+    for i in range(len(tr)):  # 去重：保证 qid1>qid2 即可去重
         if tr[i][0]>tr[i][1]:
             tr[i] = [tr[i][1],tr[i][0]]
 
@@ -249,6 +249,46 @@ def post_process(file,output):
     y_pre.to_csv(output, index=False)
 
     return y_pre
+
+# 公共个数
+def num_of_common(q1,q2):
+    t1 = np.asarray(re.split(' ',q1))
+    t2 = np.asarray(re.split(' ',q2))
+    return len(np.intersect1d(t1,t2))
+
+# 最长公共子序列
+def lcs_length(a, b):
+    table = [[0] * (len(b) + 1) for _ in range(len(a) + 1)]
+    for i, ca in enumerate(a, 1):
+        for j, cb in enumerate(b, 1):
+            table[i][j] = (
+                table[i - 1][j - 1] + 1 if ca == cb else
+                max(table[i][j - 1], table[i - 1][j]))
+    return table[-1][-1]
+
+# 编辑距离
+def levenshtein(q1, q2):
+    len_q1 = len(q1) + 1
+    len_q2 = len(q2) + 1
+    #create matrix
+    matrix = [0 for n in range(len_q1 * len_q2)]
+    #init x axis
+    for i in range(len_q1):
+        matrix[i] = i
+    #init y axis
+    for j in range(0, len(matrix), len_q1):
+        if j % len_q1 == 0:
+            matrix[j] = j // len_q1
+    for i in range(1, len_q1):
+        for j in range(1, len_q2):
+            if q1[i-1] == q2[j-1]:
+                cost = 0
+            else:
+                cost = 1
+            matrix[j*len_q1+i] = min(matrix[(j-1)*len_q1+i]+1,
+                    matrix[j*len_q1+(i-1)]+1,
+                    matrix[(j-1)*len_q1+(i-1)] + cost)
+    return matrix[-1]
 
 # if __name__=='__main__':
     # cluster_pos()

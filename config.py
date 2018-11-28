@@ -4,6 +4,7 @@ import warnings
 class DefaultConfig(object):
     raw_data_root = './data/raw_data/'
     processed_data_root = './data/processed_data/'
+    ppd_data = './data/ppd_data/'
     model = './model'
 
     MAX_NB_WORDS = 300000
